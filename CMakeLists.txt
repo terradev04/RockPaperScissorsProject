@@ -5,4 +5,6 @@ set(CMAKE_CXX_STANDARD 20)
 
 add_executable(untitled src/main.cpp
         src/RPCChoice.cpp
-        src/RPCChoice.h)
+        src/RPCChoice.h
+        src/playerChoice.cpp
+        src/playerChoice.h)

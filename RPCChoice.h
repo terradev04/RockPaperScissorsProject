@@ -1,0 +1,16 @@
+//
+// Created by terra on 25/10/2026.
+//
+
+#ifndef ROCKPAPERSCISSORS_RPCCHOICE_H
+#define ROCKPAPERSCISSORS_RPCCHOICE_H
+
+
+enum RPCChoice {
+    ROCK,
+    PAPER,
+    SCISSORS
+};
+
+
+#endif //ROCKPAPERSCISSORS_RPCCHOICE_H

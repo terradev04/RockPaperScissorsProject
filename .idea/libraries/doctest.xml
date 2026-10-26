@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="doctest" type="javaScript">
+    <properties>
+      <sourceFilesUrls>
+        <item url="file://$USER_HOME$/C Libraries/doctest-master/doctest-master" />
+      </sourceFilesUrls>
+    </properties>
+    <CLASSES>
+      <root url="file://$USER_HOME$/C Libraries/doctest-master/doctest-master" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

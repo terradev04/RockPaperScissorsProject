@@ -10,20 +10,38 @@ using namespace std;
 #include "RPCchoice.h"
 
 class playerChoice {
-    playerChoice() = default;
+
+public: playerChoice(){
+        int choice;
+    }
 
     int numberOfPlayers() {
         int playerNo;
-        cout<<"How many players are there? 1 or 2? ";
+        cout<<"How many players are there? 1 or 2?\n";
         cin>>playerNo;
-        return playerNo;    
-
+        if (playerNo >2 || playerNo <1) {
+            cout<<"Please enter 1 or 2\n";
+            playerNo = numberOfPlayers();
+        }
+        return playerNo;
     }
 
-    int playerInput(int playerNo) {
-        int choice;
+
+    RPCChoice playerInput(int playerNo) {
+        int numChoice;
+        RPCChoice choice = {};
         cout << "Choose Rock, Paper or Scissors: \n 1: Rock \n 2: Paper \n 3: Scissors" << endl;
-        cin >> choice;
+        cin >> numChoice;
+        if (numChoice == 1) {
+            choice = ROCK;
+        } else if (numChoice == 2) {
+            choice = PAPER;
+        } else if (numChoice == 3) {
+            choice = SCISSORS;
+        } else {
+            cout << "Please pick a valid number"<<endl;
+            playerInput(playerNo);
+        }
         return choice;
     }
 

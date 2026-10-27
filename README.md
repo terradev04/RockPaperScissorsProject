@@ -4,11 +4,9 @@ I will also implement a pseudorandom number generator to allow for games against
 Goals:
 - Learn to code in C++
 - Learn how to use C++ Input Streams
-- Apply basic testing
 - Use proper commenting
 - Practice version control
 Steps:
 - Add enum to store Rock, Paper or Scissors
 - Add a class to handle player input
 - Add a class to handle the game itself and computer actions
-- Add a testing class before full implementation 
